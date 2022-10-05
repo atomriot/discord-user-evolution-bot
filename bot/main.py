@@ -11,7 +11,7 @@ load_dotenv()
 
 intents = discord.Intents.default()
 intents.members = True
-bot = discord.Client(intents=intents)
+bot = discord.Bot(intents=intents)
 
 @bot.event
 async def on_ready():
